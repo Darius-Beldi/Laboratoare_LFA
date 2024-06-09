@@ -1,0 +1,32 @@
+#CFG must contain all those sections, not exactly in this order
+#All the sections must end with the string "End"
+Variables:
+    S
+    X
+    W
+    R
+End
+#"Starting Symbol" is the section where you declare the starting symbol
+Starting Symbol:
+    S
+End
+#"Sigma" is the section where you declare the terminals
+Sigma:
+    0
+    1
+    E
+End
+
+#"Rules" is the section where you declare the rules
+Rules:
+    S -> W # R
+    W -> 0 W
+    W -> 1 W
+    W -> E
+    R -> 0 R 0
+    R -> 1 R 1
+    R -> X
+    X -> O X
+    X -> 1 X
+    X -> E
+End
