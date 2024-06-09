@@ -2,7 +2,7 @@
 #All the sections must end with the string "End"
 
 
-#"States" section is the section where you declare the states of the DFA
+#"States" section is the section where you declare the states of the NFA
 States:
     q0
 End
